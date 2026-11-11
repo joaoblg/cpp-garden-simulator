@@ -1,4 +1,4 @@
-﻿# Garden Ecosystem Simulator (C++20 & Advanced OOP)
+# Garden Ecosystem Simulator (C++20 & Advanced OOP)
 
 [![C++20](https://img.shields.io/badge/C%2B%2B-20-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://en.wikipedia.org/wiki/C%2B%2B20)
 [![CMake](https://img.shields.io/badge/Build-CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)](https://cmake.org/)
@@ -11,7 +11,7 @@ The project models a living, grid-based agricultural ecosystem with autonomous p
 
 ---
 
-## 🌿 Key Features
+## ?? Key Features
 
 * **Grid Simulation & Environment Dynamics:** Configurable terrain dimensions, soil fertility, water retention, and seasonal progression.
 * **Polymorphic Plant Hierarchy:** Diverse plant species with unique lifecycle rules, hydration needs, and harvest yields (`Cato`, `Roseira`, `ErvaDaninha`, `FlorDeOrvalho`).
@@ -21,35 +21,35 @@ The project models a living, grid-based agricultural ecosystem with autonomous p
 
 ---
 
-## 🏛️ Architecture & Design
+## ??? Architecture & Design
 
 The codebase strictly follows SOLID principles and modern C++ idioms:
 
 ```
-                          ┌───────────────────────────┐
-                          │         Simulador         │
-                          │   (Engine & Coordinator)  │
-                          └─────────────┬─────────────┘
-                                        │
-           ┌────────────────────────────┼───────────────────────────┐
-           ▼                            ▼                           ▼
-┌─────────────────────┐      ┌─────────────────────┐      ┌─────────────────────┐
-│    Comando (Base)   │      │       Jardim        │      │     Jardineiro      │
-│  - ComandoAcoes     │      │  (Grid, Solo, Pos)  │      │ (Inventory & Moves) │
-│  - ComandoGestao    │      └──────────┬──────────┘      └─────────────────────┘
-│  - ComandoListagem  │                 │
-└─────────────────────┘        ┌────────┴────────┐
-                               ▼                 ▼
-                      ┌─────────────────┐ ┌─────────────────┐
-                      │  Planta (Base)  │ │Ferramenta (Base)│
-                      └─────────────────┘ └─────────────────┘
+                          +---------------------------+
+                          �         Simulador         �
+                          �   (Engine & Coordinator)  �
+                          +---------------------------+
+                                        �
+           +----------------------------+---------------------------+
+           ?                            ?                           ?
++---------------------+      +---------------------+      +---------------------+
+�    Comando (Base)   �      �       Jardim        �      �     Jardineiro      �
+�  - ComandoAcoes     �      �  (Grid, Solo, Pos)  �      � (Inventory & Moves) �
+�  - ComandoGestao    �      +---------------------+      +---------------------+
+�  - ComandoListagem  �                 �
++---------------------+        +-----------------+
+                               ?                 ?
+                      +-----------------+ +-----------------+
+                      �  Planta (Base)  � �Ferramenta (Base)�
+                      +-----------------+ +-----------------+
 ```
 
 Detailed technical analysis and specifications are documented in the [`docs/RelatorioPOO.pdf`](docs/RelatorioPOO.pdf).
 
 ---
 
-## 🚀 Building & Running
+## ?? Building & Running
 
 ### Prerequisites
 * Any C++20 compliant compiler (GCC 11+, Clang 13+, or MSVC 2019+)
@@ -75,8 +75,8 @@ cmake --build .
 
 ---
 
-## 👨‍💻 Author & Academic Context
+## ????? Author & Academic Context
 
-* **João Bernardo Graça**
+* **Jo�o Bernardo Gra�a**
 
 Developed as part of the **Degree in Computer Engineering (LEI)** - *Application Development (DA) branch* at **ISEC (Instituto Superior de Engenharia de Coimbra)**.
